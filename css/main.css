@@ -1,0 +1,180 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+body{
+    font-family: 'Smooch Sans', sans-serif;
+    background-color: aliceblue;
+}
+div h1{
+        background-color: aliceblue;
+        text-align: center;
+    }
+nav{
+        width: 100%;
+        background-color:cornflowerblue;
+        height: 30px;
+        padding-top: 10px;}
+ul{
+        display: flex;
+        justify-content: center;}
+li{
+        font-size: 10px;
+        list-style: none;}
+.menu{
+        font-weight: bold;
+        color: black;
+        padding: 4px;
+        border-radius: 3px;
+        text-decoration: none;
+    }
+.menu:hover{
+        background-color: rgb(45, 95, 187);
+    }
+#grilla {
+        display: grid;
+        width: 100%;
+        grid-template-columns: 1fr;
+        grid-template-areas:"home"
+                            "vela1"
+                            "vela2"
+                            "vela3"
+                            "vela4"
+                            "conocenos"
+                            "footer";
+}
+#materiales{
+         display: grid;
+         width: 100%;
+         grid-template-columns: 1fr;
+         grid-template-areas: "home"
+                              "video"
+                              "footer";
+}
+.home {
+    grid-area: home;
+    text-align: center;
+    background-color:cornflowerblue;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+.home-imagen {
+    width: 100%;
+}
+.vela1 {
+    margin-top: 10px;
+    grid-area: vela1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: radial-gradient(rgba(133, 133, 133, 0.5), rgba(133, 133, 133, 0.5)),url(../images/fondo.jpg);
+    background-size:cover;
+    border: solid aliceblue;
+}
+.vela2 {
+    grid-area: vela2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image:radial-gradient(rgba(133, 133, 133, 0.5), rgba(133, 133, 133, 0.5)), url(../images/fondo.jpg);
+    background-size: cover;
+    border: solid aliceblue;
+}
+.vela3 {
+    grid-area: vela3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image:radial-gradient(rgba(133, 133, 133, 0.5), rgba(133, 133, 133, 0.5)), url(../images/fondo.jpg);
+    border: solid aliceblue;
+}
+.vela4 {
+    grid-area: vela4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image:radial-gradient(rgba(133, 133, 133, 0.5), rgba(133, 133, 133, 0.5)), url(../images/fondo.jpg);
+    background-size: cover;
+    border: solid aliceblue;
+}
+.conocenos {
+    grid-area: conocenos;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.imagenes {
+    width: 100px;
+    border-radius: 100%;
+    padding: 15px;
+}
+video{
+    grid-area: video;
+    height: 5000px;
+}
+.parrafo {
+    text-align: center;
+    padding: 20px;
+}
+.footer {
+    grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;}
+.redes{
+    width: 30px;
+    padding: 20px;
+}
+@media only screen and (min-width:1024px) {
+    #grilla {
+        display: grid;
+        width: 100%;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:"home home"
+                            "vela1 vela2"
+                            "vela3 vela4"
+                            "conocenos conocenos"
+                            "footer footer";
+}}
+div h1{
+    font-size: 60px;
+    margin: 10px;
+}
+nav{
+    padding-bottom: 15px;
+}
+ul{
+    display: flex;
+    justify-content: space-around;
+}
+li{
+    font-size: 25px;
+}
+.home{
+    font-size: 45px;
+    padding-bottom: 15px;
+}
+.vela1{
+    margin-top: 0%;
+    
+}
+.parrafo{ font-size: 40px;
+}
+.imagenes{ width: 150px;
+    padding-bottom: 20px;
+    transition: .3s linear
+}
+.imagenes:hover{
+    transform: scale(1.2);
+}
+.conocenos{
+    background-color: cornflowerblue;
+}
+.redes {
+    width: 45px;
+    transition: .3s linear;
+}
+.redes:hover{
+    transform: scale(1.3);
+}
+            
